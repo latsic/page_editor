@@ -1,0 +1,31 @@
+{
+  "name": "page_editor",
+  "version": "0.0.1",
+  "description": "A very simple inside web-page editor",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latsic/page_editor.git"
+  },
+  "keywords": [
+    "html",
+    "js",
+    "css",
+    "editor",
+    "online"
+  ],
+  "author": "latsic",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/latsic/page_editor/issues"
+  },
+  "homepage": "https://github.com/latsic/page_editor#readme",
+  "dependencies": {
+    "mime": "^2.2.0",
+    "mz": "^2.7.0"
+  }
+}
