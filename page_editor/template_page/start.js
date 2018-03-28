@@ -125,6 +125,11 @@ function fillPageSelect(pageName) {
             let elems = text.split("\n");
             for(let elem of elems){
 
+                // Filename which start with a '.' are ignored!
+                if(/^\..*$/.test(elem)){
+                    continue;
+                }
+
                 let elemNoFileExt = removeFileExt(elem);
 
                 // Because a page consists of a html, a css and a

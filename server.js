@@ -48,6 +48,10 @@ class ServerSettings{
                 this.baseDirectoryModify += sep + process.argv[2];
             }
         }
+        if(!this.error) {
+            console.log("baseDirectory: ", this.baseDirectory);
+            console.log("baseDirectoryModify: ", this.baseDirectoryModify);
+        }
     }
     get getBaseDir() {
         return this.baseDirectory;
