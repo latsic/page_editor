@@ -139,6 +139,9 @@ function urlPath(url, allowedRootDir){
         srvSettings.getBaseDir,
         decodeURIComponent(pathname).slice(1));
 
+    console.log("resolved_path: ", path);
+    console.log("allowed_dir: ", allowedRootDir);
+
     if(path != allowedRootDir && 
         !path.startsWith(allowedRootDir + sep)){
         console.log("forbidden request");
